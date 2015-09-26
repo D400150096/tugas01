@@ -1,0 +1,42 @@
+/*progress persamaan kuadrat|| penerapan script konsep2*/
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+main()
+ {
+ 	int nilai_A, nilai_B, nilai_C;/*deklarasi*/
+ 	float nilai_D,x1,x2;
+		printf("input nilai A:\n"); /*input nilai A*/
+ 			scanf ("%d", &nilai_A);
+ 		printf("input nilai B:\n"); /*input nilai B*/
+ 			scanf ("%d", &nilai_B);
+		printf("input nilai C:\n"); /*input nilai C*/
+ 			scanf ("%d", &nilai_C);
+ 		nilai_D=nilai_B*nilai_B-4*nilai_A*nilai_C; /*nilai deskriminan*/
+ 		
+		 printf("persamaan kuadrat = %d", nilai_A, nilai_B, nilai_C, nilai_D);
+	
+			if (nilai_D>0)
+				{	
+					x1=((-nilai_B)+sqrt(nilai_D))/2*nilai_A;
+					x2=((-nilai_B)-sqrt(nilai_D))/2*nilai_A;
+					printf("maka hasil akar persamaanya adalah:\n");
+					printf("hasil akar x1=%f\n",x1);
+					printf("hasil akar x2=%f\n",x2);
+				}
+					else if (nilai_D=0)
+					{
+						x1=((-nilai_B)+sqrt(nilai_D))/2*nilai_A;
+						x2=-x1;
+						printf("maka hasil akar persamannya adalah:\n");
+						printf("hasil akar x1=%f\n",x1);
+						printf("hasil akar x2=%f\n",x2);
+			
+					}
+			else
+				{
+					printf("maka hasil akar persamannya berupa angka imaginer:\n");
+				}
+	getch();
+	
+ }
