@@ -1,0 +1,17 @@
+/*persamaan kuadrat konsep1*/
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+main()
+ {
+ 	int nilai_A, nilai_B, nilai_C,x1&x2;/*deklarasi*/
+		printf("input nilai A:\n"); /*input nilai A*/
+ 			scanf ("%d", &nilai_A);
+ 		printf("input nilai B:\n"); /*input nilai B*/
+ 			scanf ("%d", &nilai_B);
+		printf("input nilai C:\n"); /*input nilai C*/
+ 			scanf ("%d", &nilai_C);
+ 		x1&x2=	nilai_A*x*x+nilai_B*x+nilai_C=0
+				nilai_A*(x-x1)*(x-x2); /*nilai dari proses*/
+ 		
+		 printf("persamaan kuadrat x1&x2 = %d&%d");
